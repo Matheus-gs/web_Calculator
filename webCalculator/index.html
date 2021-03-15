@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCalculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="app">
+        <form action="" name="calculator">
+            <input type="text" name="" id="screen" placeholder="0">
+            <table>
+                <tr>
+                    <td><input type="button" class="btn" value="C" onclick="deleteNumber(value)"></input></td>
+                    <td><input type="button" class="btn" value="%" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="/" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="*" onclick="number(value)"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="7" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="8" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="9" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="-" onclick="number(value)"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="4" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="5" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="6" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="+" onclick="number(value)"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="1" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="2" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="3" onclick="number(value)"></input></td>
+                    <td rowspan="2">
+                        <input type="button" onclick="calculate()" value="=" id="rowspan" class="btn"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" value="0" onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="." onclick="number(value)"></input></td>
+                    <td><input type="button" class="btn" value="&radic;" onclick="number(value)"></input></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy;2021 - Desenvolvido por Matheus Gomes.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
